@@ -97,7 +97,7 @@ class CityListTest {
     @Test
     void testSameCityName() {
         City city = mockCity();
-        City testCity = new City("test", "ing");
-        assertTrue(false);
+        City testCity = new City("Edmonton", "new province");
+        assertTrue(testCity.sameCityName(mockCity()));
     }
 }
